@@ -25,34 +25,51 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.WriteLine("Введите первое число ");
-string number1 = Console.ReadLine()!;
-int num1 = int.Parse(number1);
+// Console.WriteLine("Введите первое число ");
+// string number1 = Console.ReadLine()!;
+// int num1 = int.Parse(number1);
 
-Console.WriteLine("Введите второе число ");
-string number2 = Console.ReadLine()!;
-int num2 = int.Parse(number2);
+// Console.WriteLine("Введите второе число ");
+// string number2 = Console.ReadLine()!;
+// int num2 = int.Parse(number2);
 
-Console.WriteLine("Введите третье число ");
-string number3 = Console.ReadLine()!;
-int num3 = int.Parse(number3);
+// Console.WriteLine("Введите третье число ");
+// string number3 = Console.ReadLine()!;
+// int num3 = int.Parse(number3);
 
-if (num1> num2)
-    if (num1 > num3)
-    {
-        Console.WriteLine($"Max = {num1} ");
-    }
-    else
-    {
-        Console.WriteLine($"Max = {num3} ");
-    }
-else if (num2 > num3)
+// if (num1> num2)
+//     if (num1 > num3)
+//     {
+//         Console.WriteLine($"Max = {num1} ");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Max = {num3} ");
+//     }
+// else if (num2 > num3)
+// {
+//     Console.WriteLine($"Max = {num2} ");
+// }
+// else 
+// {
+//     Console.WriteLine($"Max = {num3} ");
+// }
+
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.WriteLine("Ввведите число: ");
+string number = Console.ReadLine()!;
+int num = int.Parse(number);
+
+if (num%2 == 0)
 {
-    Console.WriteLine($"Max = {num2} ");
+    Console.WriteLine($"{num} -> Четное число");
 }
-else 
+else
 {
-    Console.WriteLine($"Max = {num3} ");
-}
-   
-
+    Console.WriteLine($"{num} -> Нечетное число");
+} 
