@@ -61,15 +61,31 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine("Ввведите число: ");
+// Console.WriteLine("Ввведите число: ");
+// string number = Console.ReadLine()!;
+// int num = int.Parse(number);
+
+// if (num%2 == 0)
+// {
+//     Console.WriteLine($"{num} -> Четное число");
+// }
+// else
+// {
+//     Console.WriteLine($"{num} -> Нечетное число");
+// } 
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.WriteLine("Введите число: ");
 string number = Console.ReadLine()!;
 int num = int.Parse(number);
+int startNum = 1;
 
-if (num%2 == 0)
+while(startNum <= num)
 {
-    Console.WriteLine($"{num} -> Четное число");
+    if(startNum%2 ==0)
+    Console.Write($" {startNum} , ");
+    startNum ++;
 }
-else
-{
-    Console.WriteLine($"{num} -> Нечетное число");
-} 
